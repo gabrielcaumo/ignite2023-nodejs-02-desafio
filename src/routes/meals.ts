@@ -28,25 +28,6 @@ export async function mealsRoutes(app: FastifyInstance) {
       on_diet: onDiet,
     })
 
-    // const user = await knex('users').where('id', userId).first()
-
-    // if (!user) {
-    //   return reply.status(400).send({
-    //     error: 'The user ID does not exist',
-    //   })
-    // }
-
-    // user.total_meals += 1
-    // if (onDiet) {
-    //   user.on_diet_meals += 1
-    //   user.highest_on_diet_sequence += 1
-    // } else {
-    //   user.out_diet_meals += 1
-    //   user.highest_on_diet_sequence = 0
-    // }
-
-    // await knex('users').where('id', userId).update(user)
-
     return reply.status(201).send()
   })
 
